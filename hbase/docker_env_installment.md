@@ -324,4 +324,4 @@ public class Student {
 
 ![image](https://user-images.githubusercontent.com/2221674/114293678-ace9b200-9aca-11eb-9468-1256d3f33638.png)
 
-如果设置hadoop环境变量后，cmd测试可以，但是idea任然导入不成功，此时需要使用 管理员身份打开idea
+如果设置hadoop环境变量后，cmd测试可以，但是idea任然导入不成功，此时需要使用 **管理员身份打开idea**
