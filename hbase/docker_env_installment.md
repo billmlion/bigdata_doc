@@ -5,8 +5,9 @@
 ```
 docker search hbase
 ```
+![image](https://user-images.githubusercontent.com/2221674/114293618-49f81b00-9aca-11eb-941a-6ceb70cfba1a.png)
 
-![image](DA808ED7FDD449848558B3F90EAA4DCB)
+
 
 ## 2）下载 HBase 镜像
 
@@ -19,7 +20,8 @@ docker pull harisekhon/hbase:1.3
 ```
 docker images
 ```
-![image](E3635DC6DC8A42F9987C3452492EFEDB)
+![image](https://user-images.githubusercontent.com/2221674/114293622-53818300-9aca-11eb-93f8-76aae447cde6.png)
+
 
 ## 4）运行 hbase 镜像
 
@@ -29,7 +31,7 @@ docker images
 ```
 hostname hbase-docker
 ```
-![image](11FEEF28FDF34768ACB7CB92955E479F)
+![image](https://user-images.githubusercontent.com/2221674/114293627-609e7200-9aca-11eb-876d-ad6e6ccfa229.png)
 
 ```
 docker run -d -h hbase-docker -p 2181:2181 -p 9090:9090 -p 9095:9095 -p 16000:16000  -p 16020:16020  -p 16010:16010 -p 16201:16201 -p 16301:16301 --name hbase1.3 harisekhon/hbase:1.3
@@ -42,9 +44,9 @@ docker run -d -h hbase-docker -p 2181:2181 -p 9090:9090 -p 9095:9095 -p 16000:16
 
 ## 5）登录 HBase web页面
 
-![image](BED3EB2276A64151BECFBDAD6BC3826C)
 
 
+![image](https://user-images.githubusercontent.com/2221674/114293632-6bf19d80-9aca-11eb-8ceb-14d0ff14fae6.png)
 
 
 
@@ -57,13 +59,18 @@ docker run -d -h hbase-docker -p 2181:2181 -p 9090:9090 -p 9095:9095 -p 16000:16
 ```
 docker exec -it hbase1.3 bash
 ```
-![image](4730C46B8C2A4AB28A93D6C40532D726)
+ 
+ ![image](https://user-images.githubusercontent.com/2221674/114293637-7744c900-9aca-11eb-96f5-c52239610b7f.png)
 
+ 
 ##  2）进入 HBase 的 bin 目录
-![image](1EE218868D3742F3A9A265F5E7247DF1)
+
+![image](https://user-images.githubusercontent.com/2221674/114293643-7dd34080-9aca-11eb-9fdb-76f1083e1f78.png)
+
 
 ## 3）进入 HBase 客户端
-![image](799A12E697C844239A6679E430BB4BB6)
+
+![image](https://user-images.githubusercontent.com/2221674/114293645-8297f480-9aca-11eb-8a6d-33bbbd62fd09.png)
 
 
 # 3.intellij idea下 java api访问
@@ -301,15 +308,20 @@ public class Student {
 
 # 4.issue
 ## 4.1）本地hadoop lib 导入问题
-![image](1D99E0A920E248D3A677FF85CFF79601)
+
+![image](https://user-images.githubusercontent.com/2221674/114293653-92173d80-9aca-11eb-8acb-1fe93ae2c99f.png)
+
 
 测试发现winutils在环境变量设置不成功
-![image](89D73BB9382C4D559CE98460D0528568)
+
+![image](https://user-images.githubusercontent.com/2221674/114293661-980d1e80-9aca-11eb-93ee-af9e5c895bd4.png)
 
 设置hadoop环境变量
-![image](853B616CFF0D48BA8B983B73DAF0EA6E)
+
+![image](https://user-images.githubusercontent.com/2221674/114293668-a3f8e080-9aca-11eb-8849-abe1a6db282e.png)
 
 设置idea terminal环境
-![image](636B5D8D7C5543B980347B6401E4EE49)
+
+![image](https://user-images.githubusercontent.com/2221674/114293678-ace9b200-9aca-11eb-9468-1256d3f33638.png)
 
 如果设置hadoop环境变量后，cmd测试可以，但是idea任然导入不成功，此时需要使用 管理员身份打开idea
